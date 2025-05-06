@@ -1,0 +1,49 @@
+body{
+    background-color: blue;
+}
+
+h2{
+    color: red;
+    font-size: 40px;
+}
+
+p{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 45px;
+}
+
+h1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1{
+    margin: 100px;
+}
+
+
+/* div{
+    height: 150px;
+    width: 100px;
+    background-color: brown;
+    padding: 40px 30px 45px;
+    margin-left: 50;
+} */
+
+div{
+    height: 50px;
+    width: 30px;
+    border: 50px color( red);
+    margin: 100px;
+    padding: 50px;
+}
+
+p{
+    /* color: red; */
+    color: rgb(123, 065, 222);
+    color: #c40000;
+}
