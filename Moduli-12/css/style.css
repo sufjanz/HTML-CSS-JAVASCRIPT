@@ -1,0 +1,45 @@
+@Brick {
+    font-family:"test";
+    src:url("font/Brick.otf")
+}
+
+h1 {
+    color: blue;
+    letter-spacing: 20px;
+    word-spacing: 40px;
+}
+
+p {
+    text-align: center;
+    text-indent: 50px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2 {
+    text-decoration: overline;
+    font-family: test;
+}
+
+h3 {
+    text-decoration: line-through;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+.test {
+    color: brown;
+    font-size: 50px;
+    text-align: center;
+}
+
+#test_id {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 255, 81);
+    /* font-style: italic; */
+    font-style: inherit;
+}
