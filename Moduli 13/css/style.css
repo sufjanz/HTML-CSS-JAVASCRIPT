@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+    /* list-style: georgian; */
+    /* list-style: lower-greek; */
+    padding: 0px;
+    border: 2px solid brown;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 3px red;
+}
+
+ol {
+    /* list-style: decimal-leading-zero; */
+    list-style: inside;
+    background-color: rgb(128, 225, 139);
+    padding: 15px;
+}
+
+ol li {
+    background-color: rgb(218, 103, 103);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid brown;
+    padding: 15px;
+}
+
+tbody tr:nth-child (odd) {
+    background-color: brown;
+}
+
+tbody tr:nth-child (even) {
+    background-color: green;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    background-color: blue;
+}
+
