@@ -1,0 +1,48 @@
+article p {
+    background: brown;
+    color: aqua;
+    padding: 20px;
+}
+
+article > p {
+    background-color: blue;
+    padding: 20px;
+}
+
+article + p {
+    background-color: chocolate;
+    padding: 20px;
+}
+
+article ~ p {
+    background-color: darkgreen;
+    padding: 20px;
+}
+
+h3:first-of-type {
+    color: darksalmon;
+}
+
+input:in-range {
+    border: 3px solid grey;
+}
+
+input:out-of-range {
+    border: 3px solid pink;
+}
+
+input:required {
+    background-color: darkgreen;
+}
+
+input:focus {
+    background=: #00ff59;
+}
+
+p::first-line {
+    color: dodgerblue;
+}
+
+p::first-letter {
+    color: darkolivegreen;
+}
