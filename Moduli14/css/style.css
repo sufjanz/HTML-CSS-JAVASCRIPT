@@ -36,7 +36,7 @@ input:required {
 }
 
 input:focus {
-    background=: #00ff59;
+    background: #00ff59;
 }
 
 p::first-line {
@@ -46,3 +46,45 @@ p::first-line {
 p::first-letter {
     color: darkolivegreen;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

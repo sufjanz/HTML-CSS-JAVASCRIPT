@@ -1,0 +1,76 @@
+div#static {
+
+  position: static;
+  border: 3px solid green;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+
+div#relative {
+
+  position: relative;
+  border: 3px solid green;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  left: 400px;
+  right: 300px;
+}
+
+div#fixed {
+
+  position: fixed;
+  border: 3px solid green;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  left: 400px;
+  right: 300px;
+}
+
+div#parent {
+  position: relative;
+  border: 3px solid green;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+
+div#absolute {
+  position: absolute;
+  border: 3px solid green;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  background-color: blue;
+  left: 30px;
+  top: 45px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: blueviolet;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: brown;
+}
