@@ -1,76 +1,68 @@
-div#static {
-
-  position: static;
-  border: 3px solid green;
-  width: 250px;
-  height: 250px;
-  padding: 20px;
+/* body {
+  margin: 0;
 }
 
-div#relative {
-
-  position: relative;
-  border: 3px solid green;
-  width: 250px;
-  height: 250px;
-  padding: 20px;
-  left: 400px;
-  right: 300px;
+* {
+  box-sizing: border-box;
 }
 
-div#fixed {
+/*Horizontal Menu*/
 
-  position: fixed;
-  border: 3px solid green;
-  width: 250px;
-  height: 250px;
-  padding: 20px;
-  left: 400px;
-  right: 300px;
+/* #horizontal-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-div#parent {
-  position: relative;
-  border: 3px solid green;
-  width: 250px;
-  height: 250px;
-  padding: 20px;
+#horizontal-menu li {
+  float: left;
 }
 
-div#absolute {
-  position: absolute;
-  border: 3px solid green;
-  width: 250px;
-  height: 250px;
-  padding: 20px;
-  background-color: blue;
-  left: 30px;
-  top: 45px;
+#horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: aqua;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: blueviolet;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px
-}
-
-li a:hover:not(.active) {
-    background-color: black;
+#horizontal-menu li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
-    background-color: brown;
+  background-color: #4CAF50;
+}
+ */
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: aquamarine;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: bisque;
+  padding: 14px 16px;
+  background-color: brown;
+  margin: 0;
 }
