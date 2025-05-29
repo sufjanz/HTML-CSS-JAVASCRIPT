@@ -1,0 +1,47 @@
+div .gallery{
+    margin: 5px;
+    border: 1px solid green;
+    float: left;
+    width: 180px
+}
+
+div .gallery:hover {
+    border: 3px solid blue;
+}
+
+div .gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.sprite {
+    background-image: url(../images/houses.png);
+}
+
+.engineers{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: 0 0;
+}
+
+p[class*="ds"] {
+    background-color: blue;
+    color: aqua;
+    padding: 20px;
+}
+
+p[class~="ds"] {
+    background-color: red;
+    color: wheat;
+    padding: 20px;
+}
+
+img[titles^="blue"] {
+    border: 2px solid beige;
+}
