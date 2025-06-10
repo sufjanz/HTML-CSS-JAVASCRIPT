@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.container div {
+    background-color: bisque;
+    margin: 16px;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+.container div:nth-child(1) {
+    order: 4;
+}
+
+.container div:nth-child(2) {
+    order: 2;
+}
+
+.container div:nth-child(3) {
+    order: 1;
+}
+
+.container div:nth-child(4) {
+    order: 3;
+}
+
+.container2 {
+    display: flex;
+    background-color: blue;
+    flex-direction: row-reverse;
+}
+
+.container2 div {
+    background-color: bisque;
+    margin: 16px;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+.container3 {
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+}
+
+.container3 div {
+    background-color: bisque;
+    margin: 16px;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+.container3 div:nth-child(1) {
+    flex-grow: 3;
+}
+
+.container4 {
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container4 div {
+    background-color: bisque;
+    margin: 16px;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+}
+
+.container5 {
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.container5 div {
+    background-color: bisque;
+    margin: 16px;
+    padding: 20px;
+    font-size: 35px;
+    color: black;
+    height: 50px;
+}
+
+.container5 div:nth-child(2) {
+    align-self: first flex-end;
+}
+
+
+.container5 div:nth-child(1) {
+    height: 20px;
+}
+
+.container5 div:nth-child(2) {
+    height: 60px;
+}
+
+.container5 div:nth-child(3) {
+    height: 80px;
+}
+
+.container5 div:nth-child(4) {
+    height: 120px;
+}
