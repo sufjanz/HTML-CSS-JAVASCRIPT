@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Premium Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🏨</span>
+                Premium Hotel
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="rooms.html" onclick="closeMobileMenu()">Rooms</a></li>
+                <li><a href="amenities.html" onclick="closeMobileMenu()">Amenities</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="contact.html" class="active" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="book-now-btn" onclick="closeMobileMenu()">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contact Premium Hotel</h1>
+            <p>Get in touch for reservations, inquiries, and exceptional service</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <div class="contact-details">
+                        <p><strong>Reservations:</strong><br>+1 (555) 123-4567</p>
+                        <p><strong>Concierge:</strong><br>+1 (555) 123-4568</p>
+                        <p><strong>General Inquiries:</strong><br>+1 (555) 123-4569</p>
+                    </div>
+                    <div class="contact-hours">
+                        <small>Available 24/7</small>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <div class="contact-details">
+                        <p><strong>Reservations:</strong><br>reservations@premiumhotel.com</p>
+                        <p><strong>General Info:</strong><br>info@premiumhotel.com</p>
+                        <p><strong>Events:</strong><br>events@premiumhotel.com</p>
+                    </div>
+                    <div class="contact-hours">
+                        <small>Response within 2 hours</small>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Address</h3>
+                    <div class="contact-details">
+                        <p><strong>Premium Hotel</strong><br>123 Luxury Avenue<br>Downtown District<br>Metropolitan City, MC 12345</p>
+                    </div>
+                    <div class="contact-hours">
+                        <small>Front Desk: 24/7</small>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Check-in/Out</h3>
+                    <div class="contact-details">
+                        <p><strong>Check-in:</strong><br>3:00 PM</p>
+                        <p><strong>Check-out:</strong><br>11:00 AM</p>
+                        <p><strong>Early/Late:</strong><br>Available upon request</p>
+                    </div>
+                    <div class="contact-hours">
+                        <small>Flexible arrangements available</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send us a Message</h2>
+                    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Room Reservation</option>
+                                <option value="event">Event Planning</option>
+                                <option value="spa">Spa Services</option>
+                                <option value="dining">Restaurant Reservation</option>
+                                <option value="business">Business Services</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="">Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Preferred Check-in Date</label>
+                            <input type="date" id="checkin" name="checkin">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Preferred Check-out Date</label>
+                            <input type="date" id="checkout" name="checkout">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for exclusive offers and updates
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map -->
+    <section class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <p class="section-subtitle">Located in the heart of the metropolitan district</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Premium Location</h3>
+                    <p>Our hotel is strategically located in the downtown business district, providing easy access to major attractions, shopping centers, and transportation hubs.</p>
+                    
+                    <div class="location-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏢</span>
+                            <div>
+                                <h4>Business District</h4>
+                                <p>5 minutes walk to financial center</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🛍️</span>
+                            <div>
+                                <h4>Shopping Center</h4>
+                                <p>3 minutes walk to luxury shopping</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✈️</span>
+                            <div>
+                                <h4>Airport</h4>
+                                <p>30 minutes by car or metro</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚇</span>
+                            <div>
+                                <h4>Metro Station</h4>
+                                <p>2 minutes walk to Central Station</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="directions">
+                        <h4>Getting Here</h4>
+                        <ul>
+                            <li><strong>From Airport:</strong> Take Metro Line 1 to Central Station (25 min)</li>
+                            <li><strong>By Car:</strong> Take Highway 101, Exit 15A (Downtown)</li>
+                            <li><strong>Parking:</strong> Complimentary valet parking available</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <div class="map-marker">📍</div>
+                            <h3>Premium Hotel</h3>
+                            <p>123 Luxury Avenue<br>Metropolitan City</p>
+                            <div class="map-actions">
+                                <button class="map-button">Get Directions</button>
+                                <button class="map-button">Street View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What are your check-in and check-out times?</h3>
+                    <p>Check-in is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out are available upon request and subject to availability.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer airport transportation?</h3>
+                    <p>Yes, we provide luxury airport transfer service for $75 each way. Please contact our concierge to arrange transportation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is parking available?</h3>
+                    <p>We offer complimentary valet parking for all hotel guests. Self-parking is also available in our secure underground garage.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Are pets allowed?</h3>
+                    <p>Yes, we welcome pets with a $50 per night fee. We provide pet amenities including beds, bowls, and treats.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What dining options are available?</h3>
+                    <p>Our award-winning restaurant serves dinner from 6:00 PM to 11:00 PM. We also offer 24/7 room service with an extensive menu.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you have meeting facilities?</h3>
+                    <p>Yes, we have 5 fully equipped meeting rooms and conference facilities with state-of-the-art technology and catering services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-info">
+                <h3>Emergency & After-Hours Contact</h3>
+                <p>For urgent matters outside business hours, please contact our 24/7 front desk at <strong>+1 (555) 123-4567</strong> or press "0" from any hotel phone.</p>
+                <div class="emergency-services">
+                    <span>🚨 Emergency Services: 911</span>
+                    <span>🏥 Nearest Hospital: 2 blocks away</span>
+                    <span>👮 Police Station: 3 blocks away</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🏨</span>
+                        Premium Hotel
+                    </div>
+                    <p>Experience luxury like never before in the heart of the city.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Spa & Wellness</a></li>
+                        <li><a href="amenities.html">Fine Dining</a></li>
+                        <li><a href="amenities.html">Business Center</a></li>
+                        <li><a href="amenities.html">Valet Parking</a></li>
+                        <li><a href="amenities.html">Concierge</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 123 Luxury Avenue<br>Metropolitan City, MC 12345</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>✉️ info@premiumhotel.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Hotel. All rights reserved. | Luxury Redefined</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    mobileMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (mobileMenu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    mobileMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (mobileMenu.classList.contains('active') && 
+        !mobileMenu.contains(event.target) && 
+        !menuToggle.contains(event.target)) {
+        closeMobileMenu();
+    }
+});
+
+// Close menu on window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        closeMobileMenu();
+    }
+});
+</script>
+</body>
+</html>
