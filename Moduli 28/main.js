@@ -28,7 +28,7 @@ buttonation4.onmousewheel = function(){
 var btn1 = document.getElementById("bt1");
 var btn2 = document.getElementById("bt2");
 var text = document.getElementById("txt1");
-var txt2 = document.getElementById("txt2")
+var txt2 = document.getElementById("txt2");
 
 btn1.onclick = function(){
     text.style.color = "#c7c7c7";
@@ -38,5 +38,6 @@ btn1.onclick = function(){
     txt2.setAttribute("class", "txt2")
 }
 
-// btn1.onclick = function(){
-// }
+btn2.onclick = function(){
+    txt1.setAttribute("class","txt1")
+}
